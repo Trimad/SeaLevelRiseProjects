@@ -1,0 +1,103 @@
+/* 
+#0A0024
+#001A26
+#EF8500
+#E2DB95
+#DF4E39 
+*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #17263c;
+}
+
+li {
+  float: right;
+  border-style: outset;
+  border-radius: 5px;
+  border-width: 3px;
+}
+
+li a {
+  display: block;
+  color: #515c6d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:active {
+  border-style: inset;
+}
+
+li a:hover:not(.active) {
+  background-color: #f3d19c;
+}
+
+li a.active {
+  color: white;
+  background-color: #d59563;
+}
+
+.wrapper {
+  background: #17263c;
+  display: grid;
+  grid-template-rows: 53px auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.top {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.bottom {
+  margin: 0;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  
+}
+
+#map {
+  background: #17263c;
+  height: 100%;
+  width: 100%;
+}
+
+#sketch {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background: #17263c;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  vertical-align: top;
+}
+
+#mapid { height: 100vh; width:100vw;}
